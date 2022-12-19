@@ -35,14 +35,54 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
+  line-height: 1;
+  height: 100vh;
+  background-color: var(--color-grey-5);
 }
 
 .container {
-  width: 76rem;
+  width: 90rem;
   max-width: 100%;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.button__style--purple {
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+  background-color: var(--color-brand-1);
+  color: var(--color-grey-6);
+  font-size: var(--text-2);
+}
+
+.button__style--grey {
+  padding: 0 1rem;
+  border-radius: 8px;
+  background-color: var(--color-grey-3);
+  color: var(--color-grey-2);
+  font-size: var(--text-3);
+  min-height: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media(max-width: 991px){

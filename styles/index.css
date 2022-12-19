@@ -1,0 +1,130 @@
+.main__container {
+  padding-bottom: 2rem;
+}
+
+.main__container > h2 {
+  margin: 2rem 0;
+  font-size: var(--title-4);
+}
+
+.main__container--inside {
+  display: flex;
+  gap: 4rem;
+}
+
+.main__container--left > h2,
+.main__container--card > h2 {
+  font-size: var(--title-4);
+}
+
+.main__container--list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main__container--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--color-grey-6);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.main__container--card > div,
+.aside__card--bottom {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--text-3);
+  color: var(--color-grey-2);
+}
+
+.main__container--card > p {
+  font-size: var(--text-2);
+  color: var(--color-grey-2);
+}
+
+.main__container--buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --------------- LEFT CONTAINER ---------------- */
+
+.main__container--right {
+  background-color: var(--color-grey-6);
+  border-radius: 8px;
+  height: 100%;
+  width: 50%;
+}
+
+.main__container--right > h2 {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  font-size: var(--title-4);
+}
+
+.aside__notVacancy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.aside__notVacancy > p {
+  font-size: var(--text-2);
+  color: var(--color-grey-2);
+}
+
+.button__trash {
+  cursor: pointer;
+  background-color: var(--color-grey-5);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.aside__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aside__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-bottom: 2px solid var(--color-grey-4);
+}
+
+.aside__card--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.aside__card--bottom {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main__container--inside {
+    flex-direction: column;
+  }
+
+  .main__container--right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__container--buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
